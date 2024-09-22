@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadbury Chocalate | Clone</title>
+    <link rel="shortcut icon" href="img/_Brandlogos_CDM.jpg" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .nav-item{
+            font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+            animation-name: scrol;
+            animation-duration: 2s;
+        }
+        .navbar-brand{
+          position: relative;
+          animation-name: scrol2;
+          animation-duration: 2s;
+        
+        } 
+        .d-flex>.form-control,.d-flex>label{
+          position: relative;
+          animation-name: scrol3;
+          animation-duration: 2s;
+        }
+        .nav-link{
+            color: white !important;
+            text-decoration: none !important;
+            transition: 2s !important;
+        }
+        .nav-link:hover{
+            text-decoration: underline !important;
+            text-decoration-color: #E8D187 !important;
+            text-decoration-thickness: 5px !important;
+        }
+        .img-fluid{
+            width: 230px;
+        }
+        .ri-search-line{
+            font-size: 1.4rem;
+        }
+        .body{
+            background-image: url(img/background.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .form-control{
+            background: none;
+            color: rgb(196, 196, 196);
+            outline: none !important;
+            border: none !important;
+        }
+        ::placeholder{
+            color: rgb(195, 195, 195) !important;
+            outline: none !important;
+            border: none !important;
+            background: none !important;
+        }
+        ::placeholder:focus{
+            color: rgb(186, 186, 186) !important;
+            outline: none !important;
+            border: none !important;
+            background: none !important;
+        }
+        nav label{
+            color: white;
+        }
+        .card{
+            width: 240px;
+            height: 100%;
+            background: none !important;
+            border: none !important;
+            outline: none !important;
+        }
+        .h1{
+            color: var(--maincolor);
+            font-size: 1.4rem;
+            margin-bottom: 18px !important;
+        }
+        .card>p{
+            color: white !important;
+            font-weight: 600 !important;
+        }
+        .card>p:hover{
+            text-decoration: underline !important;
+            cursor: pointer !important;
+        }
+        :root{--maincolor:#E9CB7D}
+        .col-lg-4{
+          box-shadow: 2px 2px 20px 20px rgb(202, 202, 202) !important;
+          transition: transform 1s, box-shadow 1s;
+        }
+        .col-lg-4 img{
+          box-shadow: 2px 2px 5px 5px rgba(255, 204, 75, 0.872) !important;
+          transition: transform 0.6s,box-shadow 1s;
+        }
+        .col-lg-4 img:hover{
+          transform: scale(1.1);
+          box-shadow: 2px 2px 10px 10px rgba(216, 216, 216, 0.872) !important;
+        }
+        .col-lg-4:hover{
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px 20px rgb(255, 248, 199) !important;
+        }
+        .col-6{
+          transition: transform 0.5s;
+        }
+        .col-6:hover{
+          transform: scale(1.1);
+        }
+        .ctn{
+          transition: box-shadow 1s;
+        }
+        .ctn:hover{
+          box-shadow: 2px 2px 10px 10px #fff4cf31;
+          cursor: pointer;
+        }
+        .rounded:hover{
+          transform: scale(1.1);
+          margin-left: 20px !important;
+          cursor: pointer;
+          box-shadow: 1px 1px 5px 5px #e8d187c1;
+        }
+        .left{
+          position: relative;
+          animation-name: scrol4;
+          animation-duration: 2s;
+        }
+        @keyframes scrol {
+          0%{
+            filter: opacity(0);
+            top:-100px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+          }
+        }
+          @keyframes scrol2 {
+          0%{
+            filter: opacity(0);
+            top:-100px;
+            left:-100px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+            left: 0px;
+          }
+        }
+        @keyframes scrol3 {
+          0%{
+            filter: opacity(0);
+            top:-100px;
+            right:-100px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+            right: 0px;
+          }
+        }
+        @keyframes scrol4 {
+          0%{
+            filter: opacity(0);
+            left:-100px;
+          }
+          100%{
+            filter: opacity(100);
+            left: 0px;
+          }
+        }
+        .img-fluid{
+          position: relative;
+          animation-name: scrol5;
+          animation-duration: 2s;
+          animation-timeline: view();
+        }
+        .gif5{
+          position: relative;
+          animation-name: scrol6;
+          animation-duration: 2s;
+        }
+        h1{
+          position: relative;
+          animation-name: scrol7;
+          animation-duration: 2s;
+          animation-timeline: view();
+        }
+        p{
+          position: relative;
+          animation-name: scrol7;
+          animation-duration: 2s;
+          animation-timeline: view();
+        }
+        h2{
+          position: relative;
+          animation-name: scrol7;
+          animation-duration: 2s;
+          animation-timeline: view();
+        }
+        .ctn{
+          position: relative;
+          animation-name: scrol8;
+          animation-duration: 2s;
+          animation-timeline: view();
+        }
+        @keyframes scrol5 {
+          0%{
+            filter: opacity(0);
+            transform: scale(0.5);
+          }
+          100%{
+            filter: opacity(100);
+            transform: scale(1);
+          }
+        }
+        @keyframes scrol6 {
+          0%{
+            filter: opacity(0);
+            transform: scale(0.5);
+          }
+          100%{
+            filter: opacity(100);
+            transform: scale(1);
+          }
+        }
+        @keyframes scrol7 {
+          0%{
+            filter: opacity(0);
+            top: -70px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+          }
+        }
+        .card1{
+          position: relative;
+          animation-name: card1;
+          animation-timeline: view();
+        }
+        @keyframes card1 {
+          0%{
+            filter: opacity(0);
+            top: -150px;
+            left: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+            left: 0px;
+          }
+        }
+        @keyframes card4 {
+          0%{
+            filter: opacity(0);
+            bottom: -150px;
+            left: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            bottom: 0px;
+            left: 0px;
+          }
+        }
+        @keyframes card3 {
+          0%{
+            filter: opacity(0);
+            top: -150px;
+            right: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+            right: 0px;
+          }
+        }
+        @keyframes card6 {
+          0%{
+            filter: opacity(0);
+            bottom: -150px;
+            right: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            bottom: 0px;
+            right: 0px;
+          }
+        }
+        .card3{
+          position: relative;
+          animation-name: card3;
+          animation-timeline: view();
+        }
+        .card4{
+          position: relative;
+          animation-name: card4;
+          animation-timeline: view();
+        }
+        .card5{
+          position: relative;
+          animation-name: card5;
+          animation-timeline: view();
+        }
+        .card6{
+          position: relative;
+          animation-name: card6;
+          animation-timeline: view();
+        }
+          @keyframes card2 {
+          0%{
+            filter: opacity(0);
+            top: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            top: 0px;
+          }
+        }
+        @keyframes card5 {
+          0%{
+            filter: opacity(0);
+            bottom: -150px;
+          }
+          100%{
+            filter: opacity(100);
+            bottom: 0px;
+          }
+        }
+        .card2{
+          position: relative;
+          animation-name: card2;
+          animation-timeline: view();
+        }
+        @keyframes scrol8 {
+          0%{
+            filter: opacity(0);
+            transform: scale(1);
+            
+          }
+          30%{
+            filter: opacity(50);
+            transform: scale(1.2);
+          }
+          40%{
+            filter: opacity(50);
+            transform: scale(1);
+          }
+          100%{
+            filter: opacity(100);
+            transform: scale(1);
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="body vh-auto">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-around">
+          <a class="navbar-brand ms-5" href="http://127.0.0.1:5500/index.html"><img class="img-fluid" src="img/200_Years_logo.png" alt=""></a>
+          <button class="ms-auto me-0 d-lg-none d-xl-none d-xxl-none" style="background: none !important;outline: none !important;border: none !important;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="color: white !important;font-size: 2rem; border: 2px solid ;padding-left: 10px;padding-right: 10px; border-radius: 10px;"><i class="ri-menu-line"></i></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link d-flex d-lg-none d-xl-none d-xxl-none  mx-0 mx-xl-3 mx-xxl-3" href="#">ABOUT</a>
+                <a class="nav-link d-none d-lg-flex d-xl-flex d-xxl-flex" aria-current="page" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">ABOUT <span><i class="ri-arrow-down-s-line"></i></span></a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link d-flex d-lg-none d-xl-none d-xxl-none mx-0 mx-xl-3 mx-xxl-3" href="#">EXPLORE</a>
+                <a class="nav-link d-none d-lg-flex d-xl-flex d-xxl-flex" href="#"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">EXPLORE <span><i class="ri-arrow-down-s-line"></i></span></a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link d-flex d-lg-none d-xl-none d-xxl-none mx-0 mx-xl-3 mx-xxl-3" href="#">OUR PRODUCTS</a>
+                <a class="nav-link d-none d-lg-flex d-xl-flex d-xxl-flex" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">OUR PRODUCTS <span><i class="ri-arrow-down-s-line"></i></span></a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link" href="#">RECIPES</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link" href="#">GIFTING</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-0 ms-5 mx-xl-1 mx-xxl-2">
+                <a class="nav-link" href="#">CADBURY FC</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ms-5">
+            <form class="d-flex d-none d-xl-flex d-xxl-flex d-lg-none" role="search">
+               <label for="search"><i class="ri-search-line me-2"></i></label> 
+              <input class="form-control me-1 w-50" type="search" placeholder="Search" aria-label="Search" id="search">
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="background-color: #4B0983; height: 400px ;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-around">
+              <a class="navbar-brand ms-5" href="http://127.0.0.1:5500/index.html"><img class="img-fluid" src="img/200_Years_logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" aria-current="page" href="#" style=" color: var(--maincolor) !important; text-decoration: underline; text-decoration-thickness: 5px !important; text-decoration-color: var(--maincolor) !important;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">ABOUT <span><i class="ri-arrow-up-s-line"></i></span></a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">EXPLORE</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">OUR PRODUCTS</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">RECIPES</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">GIFTING</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">CADBURY FC</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="ms-5">
+                <form class="d-flex" role="search">
+                   <label for="search2"><i class="ri-search-line me-2"></i></label> 
+                  <input class="form-control me-1 w-50" type="search" placeholder="Search" aria-label="Search" id="search2">
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="d-flex container mt-5 justify-content-between px-5">
+            <div class="card"><h1 class="h1">ANNIVERSARY</h1>
+            <p>200 Years of Cadbury</p></div>
+            <div class="card"><h1 class="h1">HISTORY</h1>
+            <p>Our Story</p><p>Timeline</p></div>
+            <div class="card"><h1 class="h1">IMPACT</h1>
+            <p>Cadbury Foundation</p>
+                <p>Cocoa Life</p>
+                <p>Sustainability</p>
+                <p>Cadbury Unwrapped</p></div>
+            <div class="card"><h1 class="h1">NEED TO KNOW</h1>
+            <p>FAQs</p>
+                <p>Product Information</p></div>
+        </div>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel" style="background-color: #4B0983; height: 310px ;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid d-flex justify-content-around">
+                  <a class="navbar-brand ms-5" href="http://127.0.0.1:5500/index.html"><img class="img-fluid" src="img/200_Years_logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="#" >ABOUT</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="http://127.0.0.1:5500/index.html" style="color: var(--maincolor) !important; text-decoration: underline; text-decoration-thickness: 5px !important; text-decoration-color:var(--maincolor); !important;">EXPLORE <span><i class="ri-arrow-up-s-line"></i></span></a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">OUR PRODUCTS</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">RECIPES</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">GIFTING</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">CADBURY FC</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="ms-5">
+                    <form class="d-flex" role="search">
+                       <label for="search2"><i class="ri-search-line me-2"></i></label> 
+                      <input class="form-control me-1 w-50" type="search" placeholder="Search" aria-label="Search" id="search2">
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            <div class="d-flex container mt-5 justify-content-between px-5" style=" width: 70%;">
+                <div class="card"><h1 class="h1">PROMOTIONS</h1>
+                <p>Competitions</p></div>
+                <div class="card"><h1 class="h1">ADVERTISING</h1>
+                <p>Latest Campaigns</p></div>
+                <div class="card"><h1 class="h1">PARTNERSHIPS</h1>
+                <p>Memory Bars</p>
+                <p>Cadbury World</p>
+                </div>
+            </div>
+            </div>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel" style="background-color: #4B0983; height: 700px ;">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-around">
+                      <a class="navbar-brand ms-5" href="http://127.0.0.1:5500/index.html"><img class="img-fluid" src="img/200_Years_logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="#" >ABOUT</a>
+                          </li>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">EXPLORE</a>
+                          </li>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" href="http://127.0.0.1:5500/index.html" style=" color: var(--maincolor)!important; text-decoration: underline; text-decoration-thickness: 5px !important; text-decoration-color: var(--maincolor) !important;">OUR PRODUCTS  <span><i class="ri-arrow-up-s-line"></i></span></a>
+                          </li>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">RECIPES</a>
+                          </li>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">GIFTING</a>
+                          </li>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">CADBURY FC</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="ms-5">
+                        <form class="d-flex" role="search">
+                           <label for="search2"><i class="ri-search-line me-2"></i></label> 
+                          <input class="form-control me-1 w-50" type="search" placeholder="Search" aria-label="Search" id="search2">
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                <div class="d-flex container mt-2 justify-content-between px-1" style=" width: 100%;">
+                    
+                    
+                    <div class="card"><h1 class="h1">BRAND</h1>
+                    <p>View all brands</p>
+                    <p>Bournville</p>
+                    <p>Cadbury Dairy Milk</p>
+                    <p>Cremme Egg</p>
+                    <p>Crunchie</p>
+                    <p>Fingers</p>
+                    <p>Freddo</p>
+                    <p>Heroes</p>
+                    <p>Milk Trey</p>
+                    <p>Mini Egg</p>
+                    <p>Roses</p>
+                    <p>Twiri</p></div>
+                    <div class="card"><h1 class="h1">DIATARY</h1>
+                    <p>Reduced Sugar Chocalate</p>
+                    <p>Under 100 Calories</p>
+                    <p>Vegan Chocalate</p>
+                    <p>Vegaterian Chocalate</p></div>
+                    <div class="card"><h1 class="h1">FLAVOUR</h1>
+                    <p>Caramel Chocolate</p>  
+                    <p>Caramilk Chocolate</p>  
+                    <p>Dark Chocolate</p>
+                    <p>Fruit & Nut Chocalate</p>
+                    <p>Milk Chocolate</p>
+                    <p>Mint Chocolate</p>
+                    <p>Nutty Chocolate</p>
+                    <p>Orange Chocolate</p>
+                    <p>White Chocolate</p></div>
+                    <div class="card"><h1 class="h1">OCCASION</h1>
+                    <p>Birthday</p>
+                    <p>Christmas</p>
+                    <p>Easter</p>
+                    <p>Father's Day</p>
+                    <p>Mother's Day</p>
+                    <p>Valentine's Day</p></div>
+                    <div class="card"><h1 class="h1">PRODUCT TYPE</h1>
+                    <p>Biscuits</p>
+                    <p>Chocolate</p>
+                    <p>Hot Chocolate</p>
+                    </div>
+                </div>
+                </div>
+    <div class="home container mt-5 mb-5">
+        <div class="row">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 ps-5">
+        <h1 class="left text-uppercase mt-0 mt-lg-5 mt-xl-5 mt-xxl-5" style="color:#E8D187; font-size: 4.2rem; width: 90% !important;">Win a Day to Remember</h1>
+        <p class="left" style=" width: 90% !important;color: white !important;margin-top: 18px !important;">This is your chance to win one of over 200,000 prizes & rewards to share with family and friends and create new memories you'll always cherish.</p>
+        <div class="d-flex left align-items-center justify-content-center mt-5 ctn" style="background: linear-gradient(to right,#e8d8a6,#E8D187,goldenrod,#E8D187);color: #4B0983 !important;font-weight: 700 !important;width: 220px;text-align: center;height: 45px !important;font-size: 1.3rem; border-radius: 50px;">Find Out More</div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 p-0 text-center pt-5">
+        <img class="img-fluid gif5" src="img/gif5.gif" alt="" style="width: 90%;">
+    </div>
+    </div>
+    </div>
+    <br>
+      </div>
+    <div class="creations container-fluid">
+        <h1 class="text-center fw-bolder mt-5" style="color: #4B0983 !important;font-size: 4rem;">NEW CREATIONS</h1>
+        <p class="mx-auto text-center" style="width: 45%;font-weight: 600;">Our chocolate makers are always inventing new ways to enjoy Cadbury chocolate. Take a look at our latest products here!</p>
+        <nav aria-label="Page navigation" style="margin:auto; width: 100px !important;">
+            <ul class="pagination mx-auto">
+              <li class="page-item me-2">
+                <a class="page-link" href="#row" aria-label="Previous">
+                  <span class="fs-2" aria-hidden="true" style="color:#4B0983;">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item ms-2">
+                <a class="page-link" href="#row2" aria-label="Next">
+                  <span class="fs-2" aria-hidden="true" style="color:#4B0983;">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="container d-flex flex-wrap flex-row">
+            <div class="d-flex justify-content-around flex-wrap w-100" id="row">
+            <div class=" card1 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70%;" src="img/537c3b21-25ca-44f2-b166-e847592f4755.png" alt=""></div>
+            <div class=" card2 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70% !important;" src="img/7c99d51e-0353-4657-bdf0-86f2ea3a2223.png" alt=""></div>
+            <div class=" card3 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70%;" src="img/537c3b21-25ca-44f2-b166-e847592f4755.png" alt=""></div>
+            </div><div class="d-flex justify-content-around flex-wrap w-100" id="row2">
+            <div class=" card4 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70% !important;" src="img/7c99d51e-0353-4657-bdf0-86f2ea3a2223.png" alt=""></div>
+            <div class=" card5 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70%;" src="img/537c3b21-25ca-44f2-b166-e847592f4755.png" alt=""></div>
+            <div class=" card6 col-12 col-lg-4 col-xl-4 col-xxl-4 d-flex" style="background-image: url(img/paint.png) !important;background-repeat: no-repeat !important;background-position: center !important;background-size: cover !important; width: 300px;height: 370px;border-radius: 20px;box-shadow: 1px 1px 5px 5px rgb(226, 226, 226);margin: 20px 15px;"><div class="text-center rounded mt-2 ms-2" style="align-self-center ;padding-top: 2px !important;background-color: goldenrod !important; width: 150px !important;height: 20px !important;font-weight: 700 !important;font-size: 0.7rem !important;" >CADBURY DAIRY MILK</div><img class="img-fluid" style=" margin-left: -110px !important;align-self: center;height: 30% !important;width: 70% !important;" src="img/7c99d51e-0353-4657-bdf0-86f2ea3a2223.png" alt=""></div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation" style="margin:auto; width: 100px !important;">
+            <ul class="pagination mx-auto">
+              <li class="page-item me-2">
+                <a class="page-link" href="#row" aria-label="Previous">
+                  <span class="fs-2" aria-hidden="true" style="color:#4B0983;">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item ms-2">
+                <a class="page-link" href="#row2" aria-label="Next">
+                  <span class="fs-2" aria-hidden="true" style="color:#4B0983;">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+    <div class="delicious container-fluid mt-5  border-sm-top border-sm-bottom">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6  text-center" style="background-color: #4B0983;"><h1 class="mx-auto  text-lg-start text-xl-start text-xxl-start " style="font-size: 3.4rem;line-height: 50px;font-weight: 700;width: 60%;color: white;margin-top: 5% !important;text-transform: uppercase;">New Cadbury Dairy Milk Fruitier & Nuttier</h1>
+            <p class="mx-auto mt-4 text-lg-start text-xl-start text-xxl-start" style="color: white;width: 60%;margin-top: 8px;">Introducing our new snack bar, a delicious blend of fruit and nuts, made delicious-ier with a layer of Cadbury Dairy Milk chocolate.</p>
+            <div class="ctn mx-auto mx-lg-5 mb-5" style="background: linear-gradient(to right, #E8D187, #e8d8a6,goldenrod, #E8D187);font-weight: 700;border-radius: 50px;width: 200px;height: 50px;padding-top: 10px !important;margin-left: 120px !important;">DISCOVER MORE</div></div>
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center"><img class="img-fluid" style="margin-bottom: 50px !important;width: 150% !important;padding-left: -10px !important;padding-right: -10px !important;" src="img/Homepage_F_N_Banner_Desktop.png" alt=""></div>
+        </div>
+    </div>
+    <div class="container-fluid border-sm-top border-sm-bottom">
+        <div class="row">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center"><img class="img-fluid" style="width: 150% !important;padding-left: -10px !important;padding-right: -10px !important;" src="img/Birthday_Gifts_Summer_24_592x444.png" alt=""></div>
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 text-center" style="background-color: #4B0983;"><h1 class="mx-auto  text-lg-start text-xl-start text-xxl-start " style="font-size: 3.4rem;line-height: 50px;font-weight: 700;width: 60%;color: white;margin-top: 20% !important;text-transform: uppercase;">Birthday Chocola Gift Ideas</h1>
+            <p class="mx-auto mt-4 text-lg-start text-xl-start text-xxl-start" style="color: white;width: 60%;margin-top: 18px;">Cadbury can help you find the perfect gift…</p>
+            <div class="ctn  mx-auto mx-lg-5 mb-5" style="background: linear-gradient(to right, #E8D187, #e8d8a6,goldenrod, #E8D187);margin-left: 120px !important;font-weight: 700;border-radius: 50px;width: 200px;height: 50px;padding-top: 10px !important;">DISCOVER GIFTS</div></div>
+        </div>
+    </div>
+    <div class="delicious container-fluid border-sm-top border-sm-bottom">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 text-center" style="background-color: #4B0983;"><h1 class="mx-auto  text-lg-start text-xl-start text-xxl-start " style="font-size: 3.4rem;line-height: 50px;font-weight: 700;width: 60%;color: white;margin-top: 8% !important;text-transform: uppercase;">CADBURY DELIGHTS ARE PRETTY SAMEY…</h1>
+            <p class="mx-auto mt-4 text-lg-start text-xl-start text-xxl-start" style="color: white;width: 60%;margin-top: 8px;">Same gooey caramel. Same soft nougat. Same Cadbury chocolate you’ve had a million times before, but they’re only 91 calories.</p>
+            <div class="ctn mx-auto mx-lg-5" style="margin-bottom: 50px !important;margin-left: 120px !important;background: linear-gradient(to right, #E8D187, #e8d8a6,goldenrod, #E8D187);font-weight: 700;border-radius: 50px;width: 200px;height: 50px;padding-top: 10px !important;">DISCOVER DELIGHTS</div></div>
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex align-items-center justify-content-center" ><img class="img-fluid" style="width: 150% !important;padding-left: -10px !important;padding-right: -10px !important;" src="img/Birthday_Gifts_592_x_444.png" alt=""></div>
+        </div>
+    </div>
+    <div class="container-fluid vh-auto d-flex justify-content-center" style="margin-left: -8px; background-image: url(img/Desktop_UK_Landing_Page.jpg);background-repeat: no-repeat;background-position: center; background-size: cover;margin-top: -10px !important;">
+    <div class="text-center" style="width: 38%;"><h2 class="fs-5 fx-lg-4 fs-xl-4 fs-xxl-4 mx-auto" style="margin-top: 20%;color: #E8D187;border-top: 4px solid #E8D187;width: 160px;;border-bottom: 4px solid #E8D187;">COMPETITION</h2>
+    <h1 class="fw-bolder text-center fs-4 lg-fs-1 xl-fs-1 fs-xxl-1" style="color: white; font-size: 3.5rem;">WIN A DAY TO REMEMBER</h1>
+  <p  class="text-center" style="color: white;">This is your chance to win one of over 200,000 prizes & rewards to share with family and friends and create new memories you'll always cherim.</p>
+  <div class="ctn mx-auto text-center w-50 w-lg-100 w-xl-100 w-xxl-100 vh-auto mb-5" style="margin-bottom: 10px !important;background: linear-gradient(to right, #E8D187, #e8d8a6,goldenrod, #E8D187);font-weight: 700;border-radius: 50px;width: 200px;padding-top: 2px !important;">ENTER NOW</div>
+</div>
+  </div>
+  <div class="container-fluid" style="background-color: #4B0983;">
+    <div class="row">
+    <div class="col-3"><img class="img-fluid" src="img/CDM_Logo_Plain_Chunk_1.png" alt=""></div>
+    <div class="col-6 pt-5"><h1 class="text-uppercase text-center mt-5 fw-bolder" style="color: white;">Treat your inbox</h1>
+     <p class="text-white text-center mt-3">Want to know about all the latest goodies from Cadbury? Sign up and you'll be the first to hear about exclusive offers, new delicious chocolate treats, gifts and more.</p>
+     <div class="ctn mx-auto text-center w-50 w-lg-100 w-xl-100 w-xxl-100 vh-auto mb-5 fs-5" style="margin-bottom: 10px !important;background: linear-gradient(to right, #E8D187, #e8d8a6,goldenrod, #E8D187);font-weight: 700;border-radius: 50px;width: 180px !important;padding-top: 10px !important;padding-bottom: 10px !important;">SIGN UP</div>
+    </div>
+    <div class="col-3 d-flex align-items-end"><img class="img-fluid" src="img/Pieces.png" alt=""></div>
+  </div>
+  </div>
+  <div class="giff">
+    <div class="vh-auto" style="text-align: center;background-color: #302361 !important;"><img class="img-fluid" src="img/gif3.gif" alt=""></div>
+  </div>
+  <div class="container-fluid" style="position: relative;">
+    <img src="img/Cameos.png" alt="" style="width: 100px;position: absolute;left: 15%;">
+    <h1 class="text-center fw-bolder mt-5 mx-auto" style="color: #4B0983; ">CADBURY BRAND</h1>
+    <p class="text-center mx-auto " style="width:30%;font-weight: 500; ">Learn more about your favourites and discover our latest creations.
+      </p>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-6 p-3 vh-auto"><div class="w-100 " style="height: 100%;border-radius: 20px;"><img class="img-fluid" src="img/Bandlogo_Freddo.png" alt="" style="width: 100%;height: 100%;border-radius: 20px;box-shadow: 2px 2px 10px 10px rgb(212, 212, 212);"></div></div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-6 p-3 vh-auto"><div class="w-100 " style="height: 100%;border-radius: 20px;"><img class="img-fluid" src="img/_Brandlogos_CDM.jpg" alt="" style="width: 100%;height: 100%;border-radius: 20px;box-shadow: 2px 2px 10px 10px rgb(214, 214, 214);"></div></div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-6 p-3 vh-auto"><div class="w-100 " style="height: 100%;border-radius: 20px;"><img  class="img-fluid" src="img/_Brandlogos_Twirl.jpg" alt="" style="width: 100%;height: 100%;border-radius: 20px;box-shadow: 2px 2px 10px 10px rgb(213, 213, 213);"></div></div>
+          <div class="col-lg-3 col-xl-3 col-xxl-3 col-6 p-3 vh-auto"><div class="w-100 " style="height: 100%;border-radius: 20px;"><img  class="img-fluid" src="img/_Brandlogos_Wispa.jpg" alt="" style="width: 100%;height: 100%;border-radius: 20px;box-shadow: 2px 2px 10px 10px rgb(214, 214, 214);"></div></div>
+        </div>
+      </div>
+  </div>
+  <footer class="container-fluid" style="background-color: #4B0983; color: #E8D187;text-align: center;font-size: 2rem;">This Clone Is Made By <a href="github.com/DeveloperInsharah" style="color: #E8D187;text-decoration: none;">@ Insharah Irfan</a></footer>
+
+    </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
